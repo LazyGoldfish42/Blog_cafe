@@ -203,12 +203,14 @@ background-color: var(--negro);
     margin-bottom: none;
 }
 
-.widget-curso__label{
+.widget-curso__label,
+.curso__label{
     font-family: var(--fuenteHeading);
     font-weight: 700;
 }
 
-.widget-curso__info{
+.widget-curso__info,
+.curso__info{
     font-weight: 400;
 }
 
@@ -232,3 +234,31 @@ background-color: var(--negro);
     .sobre-nosotros__texto{
         flex-basis: calc(50% - 1rem);  /*evita que la imagen se haga diminuta*/
 }
+}
+
+/*---------------------------*/
+/*CURSOS*/
+
+.curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.curso:last-of-type{
+    border-bottom: 0;
+    margin-bottom: none;
+}
+
+.curso__descripcion{
+    text-align: justify;
+}
+
+/*arriba están los .curso__label y .curso__info con su formateo, junto a los del index*/
