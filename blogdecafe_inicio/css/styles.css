@@ -262,3 +262,14 @@ background-color: var(--negro);
 }
 
 /*arriba están los .curso__label y .curso__info con su formateo, junto a los del index*/
+
+
+/*---------------------------*/
+/*CONTACTO*/
+
+.contacto-bg{
+    background-image: url(/img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
