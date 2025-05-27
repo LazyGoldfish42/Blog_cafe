@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Café</title>
+    <!--PREFETCH-->
+    <link rel="prefetch" href="nosotros.html" as="document">
+    <!--PRELOAD-->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preload"  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="font" crossorigin="crossorigin">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
     <header class="header">
@@ -35,7 +46,7 @@
             <h3>Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="/img/blog1.jpg" alt="imagen cafe">
+                    <img loading="lazy" src="/img/blog1.jpg" alt="imagen cafe">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de Grano de Café</h4>
@@ -45,7 +56,7 @@
             </article><!--FIN entrada1-->
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="/img/blog2.jpg" alt="imagen cafe">
+                    <img loading="lazy" src="/img/blog2.jpg" alt="imagen cafe">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
@@ -55,7 +66,7 @@
             </article><!--FIN entrada2-->
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="/img/blog3.jpg" alt="imagen cafe">
+                    <img loading="lazy" src="/img/blog3.jpg" alt="imagen cafe">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Beneficios de Café</h4>
